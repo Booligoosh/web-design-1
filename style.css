@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Akronim');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    width: 100vw;
+    height: 97vh;
+}
+
+.hero {
+    background-color: #222;
+    color: white;
+}
+
+.hero > * {
+    margin-left: 15rem;
+    display: inline-block;
+    max-width: 20rem;
+}
+
+.hero > *:first-child {
+    margin-top: 35vh;
+}
+
+.hero h1 {
+    font-family: 'Akronim', cursive;
+    font-size: 7rem;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 0;
+    color: #FFC107;
+}
+
+.hero h2 {
+    margin-top: 0;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.hero div.img {
+    position: absolute;
+    margin: 0;
+    height: 90vh;
+    width: calc(100vw - (35rem + 2rem));
+    max-width: calc((100vw - 35rem - (((-1 * (3104 / 1968) * 90vh)/4) * 1)) - 2rem);
+    top: 22vh;
+    right: 0;
+    overflow: hidden;
+    
+    background-image: url(screenshot-frame.png);
+    background-size: cover;
+    background-size: 945px;
+    background-repeat: no-repeat;
+}
+
+.hero div.img div.img-inner {
+    width: calc(100vw - (35rem + 2rem));
+    max-width: calc((100vw - 35rem - (((-1 * (3104 / 1968) * 90vh)/4) * 1)) - 2rem);
+    
+    height: auto;
+    max-height: 80vh;
+    
+    margin-top: 56px;
+    margin-left: 34px;
+}
+
+.hero div.img div.img-inner img {
+    height: -webkit-fill-available;
+    padding-bottom: 42px;
+}
+
+@media screen and (max-width: 715px) {
+    header .cta {
+        padding: calc(5px * 2) calc(12px * 2) !important;
+        border-radius: calc(1rem * 2) !important;
+        font-size: calc(1rem * 2) !important;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .hero > * {
+        margin-left: 10vw;
+    }
+    .hero h1 {
+        font-size: calc(7rem * (10 / 7));
+    }
+    .hero h2 {
+        font-size: calc(1.5rem * (10 / 7));
+    }
+    header {
+        font-size: 1.3rem !important;
+    }
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+    font-size: 1rem;
+    /*background-color: rgba(255, 255, 255, 0.95);*/
+    /*box-shadow: 0 1px 5px rgba(0, 0, 0, 0.68);*/
+}
+
+header.dark {
+    color: white;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header.dark a {
+    color: white;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 40px;
+}
+
+.cta {
+    display: block;
+    background-color: red;
+    filter: drop-shadow(0 0px 2px rgba(0, 0, 0, 0.5));
+    -webkit-filter: drop-shadow(0 0px 2px rgba(0, 0, 0, 0.5));
+    text-decoration: none;
+    color: white !important;
+}
+
+header .cta {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    padding: 5px 12px;
+    border-radius: 1rem;
+}
+
+.hero .cta {
+    /* REMOVE IF DESIRED */
+    display: none;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 15px;
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
+
+
+/* Text inset shadow from https://stackoverflow.com/questions/2889501/inner-text-shadow-with-css/7938200#7938200 */
+
+.inner_shadow {
+    color: transparent;
+    text-shadow: 0 0 50px black, 0 0 0 white;
+}
+
+
+/* End text inset shadow code */
