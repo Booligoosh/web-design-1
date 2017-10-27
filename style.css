@@ -84,12 +84,6 @@ section {
     .hero > * {
         margin-left: 10vw;
     }
-    .hero h1 {
-        font-size: calc(7rem * (10 / 7));
-    }
-    .hero h2 {
-        font-size: calc(1.5rem * (10 / 7));
-    }
     header {
         font-size: 1.3rem !important;
     }
