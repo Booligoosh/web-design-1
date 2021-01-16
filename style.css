@@ -52,7 +52,7 @@ section {
     
     background-image: url(screenshot-frame.png);
     background-size: cover;
-    background-size: 945px;
+    background-size: calc(((100vw - 35rem - (((-1 * (3104 / 1968) * 90vh)/4) * 1)) - 2rem) * 1.65);
     background-repeat: no-repeat;
 }
 
@@ -63,13 +63,13 @@ section {
     height: auto;
     max-height: 80vh;
     
-    margin-top: 56px;
-    margin-left: 34px;
+    margin-top: calc(((100vw - 35rem - (((-1 * (3104 / 1968) * 90vh)/4) * 1)) - 2rem)/10);
+    margin-left: calc(((100vw - 35rem - (((-1 * (3104 / 1968) * 90vh)/4) * 1)) - 2rem)/17);
 }
 
 .hero div.img div.img-inner img {
     height: -webkit-fill-available;
-    padding-bottom: 42px;
+    padding-bottom: calc(((100vw - 35rem - (((-1 * (3104 / 1968) * 90vh)/4) * 1)) - 2rem)/13.5);
 }
 
 @media screen and (max-width: 715px) {
